@@ -1,0 +1,150 @@
+/* Обнуление */
+*{padding:0;margin:0;border:0;}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; }
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/* -------- */
+
+body{
+    padding: 40px 10px 20px 10px;
+    /* background: linear-gradient(90deg,orangered, purple); */
+    background: linear-gradient(90deg,cyan, green, orange, purple);
+    font-size: 20px;
+    font-family: monospace;
+    line-height: 30px;
+}
+
+.wrapper{
+    border-radius: 1%;
+    background-color:black;
+    padding: 10px;
+    min-height: 100%;
+}
+
+.header, .footer, .main{
+    background-color: white;
+    padding: 20px;
+}
+
+.header{
+    background-color: black;
+    color:white;
+    border:1px solid white;
+    height: 20%;
+    width: 100%;
+}
+
+.main{
+    border: 1px solid black;
+    display: flex;
+}
+
+.content{
+    width: 60%;
+}
+
+.content button{
+    padding: .3em .8em;
+    border: 1px solid (0,0,0,.1);
+    background: #58a linear-gradient(hsla (0,0%,100%,.2), transparent);
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+    color: white;
+    text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+    font-size: 120%;
+    line-height: 1.5;
+    border: 4px gray solid;
+    margin-bottom: 30px;
+}
+
+.content button:hover{
+    border: 4px gold dashed;
+}
+
+.green{
+    background-color: purple;
+}
+
+.red{
+    background-color: darkred;
+}
+
+.color{
+    background-color: crimson;
+    padding: 10px;
+    color: rgb(133, 15, 0);
+    border-radius: 13%;
+    border: 3px currentColor dotted;
+    outline: 5px solid crimson;
+}
+
+.color:hover{
+    background-color:rgb(133, 15, 0);
+    color: crimson;
+    border-color: currentColor;
+    outline: 5px solid rgb(133, 15, 0);
+}
+
+.cool{
+    display: inline-block;
+    margin:0px 50px;
+    padding: 10px;
+    background-color: burlywood;
+    border: 2px dashed rgb(122, 70, 35);
+    outline: 10px solid burlywood;
+    border-radius: 1%;
+    cursor: pointer;
+}
+
+.cool :hover::before{
+    content: '>' ;
+}
+
+.cool :hover::after{
+    content: '<' ;
+}
+
+.content th, td{
+    border: 3px grey double;
+    outline: 2px solid black;
+    padding: 3px;
+}
+
+.content th{
+    background-color:rgb(140, 156, 177);
+}
+
+.content td{
+    background-color:lightsteelblue;
+}
+
+.content table{
+    margin: 10px;
+}
+
+.sidebar{
+    width: 40%;
+}
+
+.sidebar img{
+    border:2px black solid;
+}
+
+.footer{
+    background-color: black;
+    color:white;
+    border:1px solid white;
+    height: 20%;
+    width: 100%;
+}
